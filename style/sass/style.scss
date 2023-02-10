@@ -1,2 +1,7 @@
 @import './abstracts/variables';
 @import './base/base';
+@import './layouts/wrapper';
+@import './layouts/header';
+
+/*components*/
+@import './component/contact-us';

@@ -1,0 +1,22 @@
+.header {
+    padding: 15px 0 17px 0;
+    box-shadow: 0px 4px 20px 0px #0000000d;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+
+    &__link {
+        list-style: none;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+}
