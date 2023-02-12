@@ -11,13 +11,21 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./style/css/style.css" />
+        <link rel="stylesheet" href=".src/style/css/style.css" />
     </head>
     <body>
         <!-- HEADER -->
         <header class="header">
             <div class="wrapper header__wrapper">
-                <a href="#" class="logo">Logo</a>
+                <a href="#" class="logo">
+                    <object
+                        data="img/logo.svg"
+                        type="image/svg+xml"
+                        class="logo-object"
+                    >
+                        Your browser does'n support SVG
+                    </object>
+                </a>
                 <nav class="header__navigation">
                     <ul class="navigation">
                         <li class="navigation__link">Home</li>
@@ -48,11 +56,15 @@
                                 Get started
                             </button>
                             <a href="#" class="link-button"
-                                ><span class="ico ico_play"></span>Watch the
-                                Video</a
+                                ><span class="ico ico_play"></span>
+                                <span class="link-button__text"
+                                    >Watch the Video</span
+                                ></a
                             >
                         </div>
                     </div>
+                    <img src="./img/promo/promo.png" class="promo__image"
+                    alt="The Design Thinking superpowers"
                 </div>
             </section>
             <section class="tools">
