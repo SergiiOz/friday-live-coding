@@ -1,6 +1,10 @@
 @import './abstracts/variables';
+@import './abstracts/placeholders';
+
+/*base*/
 @import './base/base';
 @import './base/button';
+@import './base/logo';
 
 /*layauts*/
 @import './layouts/wrapper';

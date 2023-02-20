@@ -1,3 +1,8 @@
+.logo-path {
+  transition: all 0.3s ease-out;
+}
+
+/*base*/
 html {
   font-size: 10px;
 }
@@ -75,6 +80,10 @@ h5 {
 .button_colored:hover {
   background: #ff7549;
   border-color: #ff7549;
+}
+
+.logo-svg:hover .logo-path {
+  fill: #ff9900;
 }
 
 /*layauts*/
