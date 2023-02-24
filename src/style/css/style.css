@@ -1,5 +1,89 @@
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* https://medium.com/@stasonmars/%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-%D1%81%D0%B1%D1%80%D0%BE%D1%81-css-f5816963c82b
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 .logo-path {
   transition: all 0.3s ease-out;
+}
+
+.button, body {
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.promo__text, h1 {
+  font-family: "Poppins", Verdana, sans-serif;
 }
 
 /*base*/
@@ -9,47 +93,47 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2.6rem;
+  font-weight: normal;
+  font-style: bold;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-size: 44px;
-  font-weight: 700;
   line-height: 54px;
+  font-weight: 700;
+  font-style: bold;
 }
 
 h2 {
-  font-style: normal;
   font-size: 34px;
-  font-weight: 700;
   line-height: 46px;
+  font-weight: 700;
+  font-style: bold;
 }
 
 h3 {
-  font-style: normal;
   font-size: 24px;
-  font-weight: 700;
   line-height: 34px;
+  font-weight: 700;
+  font-style: bold;
 }
 
 h4 {
-  font-style: normal;
   font-size: 22px;
-  font-weight: 600;
   line-height: 30px;
+  font-weight: 600;
+  font-style: bold;
 }
 
 h5 {
-  font-style: normal;
   font-size: 16px;
-  font-weight: 700;
   line-height: 26px;
+  font-weight: 700;
+  font-style: bold;
 }
 
 .button {
-  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
   padding: 11px 25px 13px;
   font-style: normal;
   font-weight: 600;
@@ -59,24 +143,20 @@ h5 {
   cursor: pointer;
   transition: all 0.2s;
 }
-
 .button_bordered {
   background: #ffffff;
   border: 1px solid #d7d7d7;
   color: #544837;
 }
-
 .button_bordered:hover {
   background: #bcd0e5;
   border-color: #bcd0e5;
 }
-
 .button_colored {
   background: #ff9900;
   color: #ffffff;
   border: 1px solid #ff9900;
 }
-
 .button_colored:hover {
   background: #ff7549;
   border-color: #ff7549;
@@ -136,6 +216,19 @@ h5 {
 }
 .promo__content {
   padding-right: 65px;
+}
+
+.promo__title {
+  margin: 0 0 30px;
+}
+
+.promo__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: normal;
+  font-style: bold;
 }
 
 .promo__buttons > * {
