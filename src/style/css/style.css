@@ -48,7 +48,6 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
   display: block;
 }
 
@@ -186,6 +185,27 @@ h5 {
   display: inline-block;
 }
 
+.icon-square {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-square_purple {
+  background-color: #7752be;
+}
+.icon-square_orange {
+  background-color: #fab005;
+}
+.icon-square_red {
+  background-color: #f03e3d;
+}
+.icon-square_blue {
+  background-color: #4dadf7;
+}
+
 .ico_play {
   background-image: url(../../img/icons/play.svg);
   width: 18px;
@@ -193,6 +213,30 @@ h5 {
 }
 .ico_play:hover {
   background-image: url(../../img/icons/play-hover.svg);
+}
+
+.ico_arrow {
+  background-image: url(../../img/icons/arrow.svg);
+  width: 12px;
+  height: 17px;
+}
+
+.ico_snake {
+  background-image: url(../../img/icons/snake.svg);
+  width: 18px;
+  height: 14px;
+}
+
+.ico_heart {
+  background-image: url(../../img/icons/heart.svg);
+  width: 17px;
+  height: 15px;
+}
+
+.ico_sandclock {
+  background-image: url(../../img/icons/sandclock.svg);
+  width: 15px;
+  height: 17px;
 }
 
 /*layauts*/
@@ -231,6 +275,33 @@ h5 {
   cursor: pointer;
 }
 
+.layout-4-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-4-column > * {
+  flex-basis: 21%;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-3-column > * {
+  flex-basis: 30%;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-2-column > * {
+  flex-basis: 45%;
+}
+
 /*components*/
 .contact-us {
   background-color: #ffeee1;
@@ -262,6 +333,12 @@ h5 {
 
 .promo__buttons > * {
   margin-right: 44px;
+}
+
+.tools__title {
+  max-width: 462px;
+  margin: 0 auto 70px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
