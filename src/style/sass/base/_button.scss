@@ -31,3 +31,19 @@
         }
     }
 }
+
+.link-button {
+    color: $color-primary;
+    @extend %font-add;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+        color: $color-additional;
+    }
+}
+
+.link-button__text {
+    font-weight: 600;
+    margin-left: 9px;
+}

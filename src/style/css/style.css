@@ -74,6 +74,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/*abstracts*/
 .logo-path {
   transition: all 0.3s ease-out;
 }
@@ -82,7 +83,7 @@ select {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.promo__text, h1 {
+.promo__text, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -162,8 +163,36 @@ h5 {
   border-color: #ff7549;
 }
 
+.link-button {
+  color: #ff9900;
+  display: inline-flex;
+  align-items: center;
+}
+.link-button:hover {
+  color: #ff7549;
+}
+
+.link-button__text {
+  font-weight: 600;
+  margin-left: 9px;
+}
+
 .logo-svg:hover .logo-path {
   fill: #ff9900;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico_play {
+  background-image: url(../../img/icons/play.svg);
+  width: 18px;
+  height: 19px;
+}
+.ico_play:hover {
+  background-image: url(../../img/icons/play-hover.svg);
 }
 
 /*layauts*/
