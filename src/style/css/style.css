@@ -335,10 +335,31 @@ h5 {
   margin-right: 44px;
 }
 
+.tools__wrapper {
+  padding-bottom: 90px;
+  background-image: url(../../img/backgrounds/tools-bg.svg);
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .tools__title {
   max-width: 462px;
   margin: 0 auto 70px;
   text-align: center;
+}
+
+.tools__button {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.tool__icon {
+  margin-bottom: 30px;
+}
+
+.tool__title {
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
