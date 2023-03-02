@@ -13,3 +13,13 @@
 .strategies__tags {
     margin-bottom: 31px;
 }
+
+.strategy__layout {
+    > * {
+        margin-bottom: 30px;
+    }
+}
+
+.strategy__content {
+    padding: 24px 33px 26px;
+}

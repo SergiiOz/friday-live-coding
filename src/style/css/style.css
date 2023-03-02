@@ -133,6 +133,11 @@ h5 {
   font-style: bold;
 }
 
+.block-shadowed {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
 .button {
   padding: 11px 25px 13px;
   font-style: normal;
@@ -402,6 +407,14 @@ h5 {
 
 .strategies__tags {
   margin-bottom: 31px;
+}
+
+.strategy__layout > * {
+  margin-bottom: 30px;
+}
+
+.strategy__content {
+  padding: 24px 33px 26px;
 }
 
 /*# sourceMappingURL=style.css.map */
