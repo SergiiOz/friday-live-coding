@@ -143,7 +143,7 @@
                             />
 
                             <div class="strategy__content">
-                                <h3>
+                                <h3 class="strategy__name">
                                     Increasing Prosperity With Positive Thinking
                                 </h3>
 
@@ -159,7 +159,7 @@
                                 alt="photo increase"
                             />
                             <div class="strategy__content">
-                                <h3>
+                                <h3 class="strategy__name">
                                     Increasing Prosperity With Positive Thinking
                                 </h3>
 
@@ -175,7 +175,7 @@
                                 alt="photo increase"
                             />
                             <div class="strategy__content">
-                                <h3>
+                                <h3 class="strategy__name">
                                     Increasing Prosperity With Positive Thinking
                                 </h3>
 
@@ -191,8 +191,9 @@
                                 alt="photo increase"
                             />
                             <div class="strategy__content">
-                                <h3>
-                                    Increasing Prosperity With Positive Thinking
+                                <h3 class="strategy__name">
+                                    Success Steps For Your Personal Or Business
+                                    Life Plus Funny Image on the Back
                                 </h3>
 
                                 <div class="strategy__tags">
@@ -207,7 +208,7 @@
                                 alt="photo increase"
                             />
                             <div class="strategy__content">
-                                <h3>
+                                <h3 class="strategy__name">
                                     Increasing Prosperity With Positive Thinking
                                 </h3>
 
@@ -223,7 +224,7 @@
                                 alt="photo increase"
                             />
                             <div class="strategy__content">
-                                <h3>
+                                <h3 class="strategy__name">
                                     Increasing Prosperity With Positive Thinking
                                 </h3>
 
@@ -239,7 +240,7 @@
                                 alt="photo increase"
                             />
                             <div class="strategy__content">
-                                <h3>
+                                <h3 class="strategy__name">
                                     Increasing Prosperity With Positive Thinking
                                 </h3>
 
@@ -255,7 +256,7 @@
                                 alt="photo increase"
                             />
                             <div class="strategy__content">
-                                <h3>
+                                <h3 class="strategy__name">
                                     Increasing Prosperity With Positive Thinking
                                 </h3>
 
@@ -284,14 +285,48 @@
                     <div class="layout-3-column">
                         <div class="employee block-shadowed">
                             <div class="employee__content">
-                                <h5>Kathy Rosenberg</h5>
+                                <h5 class="employee__name">Kathy Rosenberg</h5>
                                 <p class="employee__title">Product Mannager</p>
                                 <a href="mailto:kathyr@gmail.com "
                                     >kathyr@gmail.com</a
                                 >
 
                                 <img
-                                    src="./src/img/about-us/avatar_1.jpeg"
+                                    src="./src/img/about-us/avatar_1.png"
+                                    alt="avatar"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="employee block-shadowed">
+                            <div class="employee__content">
+                                <h5 class="employee__name">
+                                    Alexandra Boyarskaya
+                                </h5>
+                                <p class="employee__title">
+                                    Support Marketing Specialist
+                                </p>
+                                <a href="mailto:alexandrab@gmail.com "
+                                    >alexandrab@gmail.com</a
+                                >
+
+                                <img
+                                    src="./src/img/about-us/avatar_2.png"
+                                    alt="avatar"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="employee block-shadowed">
+                            <div class="employee__content">
+                                <h5 class="employee__name">Melani Amini</h5>
+                                <p class="employee__title">Photographer</p>
+                                <a href="mailto:melania@gmail.com"
+                                    >melania@gmail.com</a
+                                >
+
+                                <img
+                                    src="./src/img/about-us/avatar_3.png"
                                     alt="avatar"
                                 />
                             </div>
@@ -330,9 +365,11 @@
                             </p>
                         </div>
 
-                        <div class="contact-us__form">
+                        <div class="contact-us__form contact-us__line">
                             <form action method="POST">
-                                <div class="layout-2-column">
+                                <div
+                                    class="layout-2-column contact-us__inputs-block"
+                                >
                                     <input
                                         type="text"
                                         name="name"
@@ -345,9 +382,9 @@
                                     />
                                 </div>
                                 <textarea
+                                    class="contact-us__line"
                                     name="question"
-                                    cols="30"
-                                    rows="10"
+                                    placeholder="What do you want to ask?"
                                 ></textarea>
                                 <div class="contact-us__button">
                                     <button
@@ -365,18 +402,43 @@
         </main>
         <!-- FOOTER -->
         <footer class="footer">
-            <div class="wrapper">
-                <div class="layout-4-column">
-                    <a href="#" class="logo">Logo</a>
+            <div class="wrapper footer__wrapper">
+                <a href="#" class="logo">
+                    <object
+                        type="image/svg+xml"
+                        data="./src/img/logo.svg"
+                        class="logo-object"
+                    >
+                        Your browser does not support SVG
+                    </object>
+                </a>
 
-                    <div class="footer-navigation">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li>
-                                <a href="#" class="footer-navigation__links"
-                                    >About Us</a
-                                >
-                            </li>
+                <div class="footer-navigation layout-3-column">
+                    <div class="footer-navigation__column">
+                        <h4 class="footer-navigation__title">Quick Links</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation__column">
+                        <h4 class="footer-navigation__title">Legal Stuff</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">Disclamer</a></li>
+                            <li><a href="#">Financing</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation__column">
+                        <h4 class="footer-navigation__title">Quick Links</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
