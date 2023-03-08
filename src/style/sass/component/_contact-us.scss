@@ -3,6 +3,36 @@
     padding: 62px 0 82px;
 }
 
+.contact-us__title {
+    margin: 0 0 17px;
+}
+
+.contact-us__content {
+    max-width: 528px;
+}
+
+.contact-us__text {
+    margin: 0 0 59px;
+}
+
+.contact-us__link {
+    display: flex;
+    align-items: center;
+    margin: 0 0 19px;
+    @include font($size: 2.5rem, $height: 2.6rem, $weight: normal);
+
+    a {
+        margin-left: 11px;
+        color: $color-text;
+        text-decoration: none;
+    }
+    &:hover {
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
 .contact-us__form {
     input,
     textarea {

@@ -372,6 +372,36 @@ h5 {
   padding: 62px 0 82px;
 }
 
+.contact-us__title {
+  margin: 0 0 17px;
+}
+
+.contact-us__content {
+  max-width: 528px;
+}
+
+.contact-us__text {
+  margin: 0 0 59px;
+}
+
+.contact-us__link {
+  display: flex;
+  align-items: center;
+  margin: 0 0 19px;
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+  font-weight: normal;
+  font-style: bold;
+}
+.contact-us__link a {
+  margin-left: 11px;
+  color: #544837;
+  text-decoration: none;
+}
+.contact-us__link:hover a {
+  text-decoration: underline;
+}
+
 .contact-us__form input,
 .contact-us__form textarea {
   border: 1px solid #ffffff;
