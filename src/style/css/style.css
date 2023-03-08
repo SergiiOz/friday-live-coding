@@ -74,7 +74,7 @@ select {
   }
 }
 /*abstracts*/
-.logo-path {
+.footer-navigation__links a, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -82,7 +82,7 @@ select {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer-navigation__links, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -343,6 +343,27 @@ h5 {
 
 .footer-navigation {
   flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-navigation__links a {
+  color: #544837;
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  font-weight: normal;
+  font-style: bold;
+}
+.footer-navigation__links a:hover {
+  color: #ff9900;
 }
 
 /*components*/
