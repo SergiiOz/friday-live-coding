@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<?xml-stylesheet type="text/css" href="../style/css/style.css"?>
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet type="text/css" href="../style/css/style.css" ?>
 <!-- add two string above and add classes 'logo-svg' and 'logo-path' -->
 
 <svg class="logo-svg" width="191" height="32" viewBox="0 0 191 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
