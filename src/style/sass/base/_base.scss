@@ -10,6 +10,10 @@ body {
 h1 {
     @extend %font-add;
     @include font($size: 44px, $height: 54px);
+
+    @include media-mobile {
+        @include font($size: 3.2rem, $height: 4.2rem);
+    }
 }
 
 h2 {

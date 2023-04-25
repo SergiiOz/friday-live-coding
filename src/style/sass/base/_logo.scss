@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.logo-object {
+    width: 160px;
+}
+
 .logo-path {
     @extend %transition;
 }

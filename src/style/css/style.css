@@ -104,6 +104,14 @@ h1 {
   font-weight: 700;
   font-style: bold;
 }
+@media (max-width: 414px) {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+    font-style: bold;
+  }
+}
 
 h2 {
   font-size: 34px;
@@ -183,6 +191,10 @@ h5 {
 
 .logo {
   display: flex;
+}
+
+.logo-object {
+  width: 160px;
 }
 
 .logo-svg:hover .logo-path {
@@ -294,6 +306,7 @@ h5 {
 @media (max-width: 768px) {
   .hamburger {
     display: inline-block;
+    margin-right: 37px;
   }
 }
 .hamburger::before {
@@ -318,6 +331,11 @@ h5 {
 @media (max-width: 1197px) {
   .wrapper {
     padding: 0 46px;
+  }
+}
+@media (max-width: 414px) {
+  .wrapper {
+    padding: 0 21px;
   }
 }
 
@@ -345,9 +363,13 @@ h5 {
 .header__buttons > .button {
   margin-left: 14px;
 }
-
 .header__buttons > .button:first-child {
   margin-left: 0;
+}
+@media (max-width: 414px) {
+  .header__buttons {
+    display: none;
+  }
 }
 
 .navigation {
@@ -495,17 +517,43 @@ h5 {
 
 .promo {
   padding: 30px 0;
+  overflow: hidden;
 }
 .promo__wrapper {
   display: flex;
   align-items: center;
 }
+@media (max-width: 414px) {
+  .promo__wrapper {
+    flex-direction: column-reverse;
+  }
+}
 .promo__content {
   padding-right: 65px;
+}
+@media (max-width: 768px) {
+  .promo__content {
+    padding-right: 0;
+  }
+}
+@media (max-width: 414px) {
+  .promo__content {
+    text-align: center;
+  }
 }
 
 .promo__title {
   margin: 0 0 30px;
+}
+@media (max-width: 768px) {
+  .promo__title {
+    margin: 0 0 26px;
+  }
+}
+@media (max-width: 414px) {
+  .promo__title {
+    margin: 0 0 9px;
+  }
 }
 
 .promo__text {
@@ -516,9 +564,54 @@ h5 {
   font-weight: normal;
   font-style: bold;
 }
+@media (max-width: 768px) {
+  .promo__text {
+    width: 380px;
+  }
+}
+@media (max-width: 414px) {
+  .promo__text {
+    margin-bottom: 23px;
+    width: auto;
+  }
+}
 
+.promo__buttons {
+  display: flex;
+  align-items: center;
+}
 .promo__buttons > * {
   margin-right: 44px;
+}
+.promo__buttons > *:last-child {
+  margin-right: 0;
+}
+@media (max-width: 414px) {
+  .promo__buttons {
+    flex-direction: column;
+  }
+  .promo__buttons > * {
+    margin-right: 0px;
+    margin-bottom: 26px;
+    width: 100%;
+  }
+  .promo__buttons > *:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 414px) {
+  .promo__buttons {
+    margin: 0 auto;
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 414px) {
+  .promo__image {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
 }
 
 .tools__wrapper {
