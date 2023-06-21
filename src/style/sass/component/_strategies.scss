@@ -14,16 +14,35 @@
     margin-bottom: 31px;
 }
 
-.strategy__layout {
+//Strategy
+.strategy__wrapper {
     > * {
         margin-bottom: 30px;
+
+        @include media-tablet {
+            flex-basis: 48%;
+        }
+    }
+}
+
+.strategy {
+    display: flex;
+    flex-direction: column;
+
+    @include media-tablet {
+        overflow: hidden;
     }
 }
 
 .strategy__content {
     padding: 24px 33px 26px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .strategy__name {
+    flex-grow: 1;
     margin-bottom: 29px;
+    text-align: left;
 }

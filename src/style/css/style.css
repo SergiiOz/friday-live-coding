@@ -657,16 +657,36 @@ h5 {
   margin-bottom: 31px;
 }
 
-.strategy__layout > * {
+.strategy__wrapper > * {
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .strategy__wrapper > * {
+    flex-basis: 48%;
+  }
+}
+
+.strategy {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .strategy {
+    overflow: hidden;
+  }
 }
 
 .strategy__content {
   padding: 24px 33px 26px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .strategy__name {
+  flex-grow: 1;
   margin-bottom: 29px;
+  text-align: left;
 }
 
 .about-us {
