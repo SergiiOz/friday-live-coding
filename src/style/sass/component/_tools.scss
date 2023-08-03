@@ -17,10 +17,50 @@
     margin-top: 60px;
 }
 
+//Tool block
+
+.tool__container {
+    @include media-tablet {
+        flex-wrap: wrap;
+        > .tool {
+            flex-basis: 43%;
+        }
+    }
+
+    @include media-mobile {
+        > .tool {
+            flex-basis: 100%;
+            margin-bottom: 47px;
+        }
+    }
+}
+
+.tool {
+    @include media-tablet {
+        text-align: center;
+    }
+}
+
 .tool__icon {
     margin-bottom: 30px;
+
+    @include media-tablet {
+        margin-bottom: 20px;
+    }
+
+    @include media-mobile {
+        margin-bottom: 11px;
+    }
 }
 
 .tool__title {
     margin-bottom: 16px;
+
+    @include media-tablet {
+        margin-bottom: 6px;
+    }
+
+    @include media-mobile {
+        margin-bottom: 2px;
+    }
 }
