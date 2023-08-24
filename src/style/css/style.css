@@ -119,6 +119,14 @@ h2 {
   font-weight: 700;
   font-style: bold;
 }
+@media (max-width: 414px) {
+  h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    font-style: bold;
+  }
+}
 
 h3 {
   font-size: 24px;
@@ -140,6 +148,22 @@ h4 {
   line-height: 30px;
   font-weight: 600;
   font-style: bold;
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-style: bold;
+  }
+}
+@media (max-width: 414px) {
+  h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    font-style: bold;
+  }
 }
 
 h5 {
@@ -430,14 +454,35 @@ h5 {
 .footer {
   padding: 60px 0 50px;
 }
+@media (max-width: 414px) {
+  .footer {
+    padding: 28px 0;
+  }
+}
 
 .footer__wrapper {
   display: flex;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation {
   flex-grow: 1;
   padding-left: 152px;
+}
+@media (max-width: 768px) {
+  .footer-navigation {
+    margin-top: 34px;
+    padding-left: 0;
+  }
+}
+@media (max-width: 414px) {
+  .footer-navigation {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation__title {
@@ -465,6 +510,17 @@ h5 {
   background-color: #ffeee1;
   padding: 62px 0 82px;
 }
+@media (max-width: 768px) {
+  .contact-us {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column;
+  }
+}
 
 .contact-us__title {
   margin: 0 0 17px;
@@ -472,6 +528,11 @@ h5 {
 
 .contact-us__content {
   max-width: 528px;
+}
+@media (max-width: 768px) {
+  .contact-us__content {
+    max-width: 100%;
+  }
 }
 
 .contact-us__text {
@@ -486,6 +547,11 @@ h5 {
   line-height: 2.6rem;
   font-weight: normal;
   font-style: bold;
+}
+@media (max-width: 768px) {
+  .contact-us__link {
+    justify-content: center;
+  }
 }
 .contact-us__link a {
   margin-left: 11px;
@@ -515,12 +581,26 @@ h5 {
   height: 160px;
 }
 
-.contact-us__inputs-block {
-  margin: 0 0 18px;
+.contact-us__line {
+  margin-bottom: 19px;
+}
+@media (max-width: 414px) {
+  .contact-us__line {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .contact-us__line > * {
+    margin-bottom: 19px;
+  }
 }
 
 .contact-us__button > * {
   min-width: 117px;
+}
+@media (max-width: 414px) {
+  .contact-us__button {
+    margin-top: 24px;
+  }
 }
 
 .promo {
@@ -640,6 +720,11 @@ h5 {
   text-align: center;
   margin-top: 60px;
 }
+@media (max-width: 768px) {
+  .tools__button {
+    margin-top: 0px;
+  }
+}
 
 @media (max-width: 768px) {
   .tool__container {
@@ -687,6 +772,12 @@ h5 {
 @media (max-width: 414px) {
   .tool__title {
     margin-bottom: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tool__text {
+    margin-bottom: 54px;
   }
 }
 

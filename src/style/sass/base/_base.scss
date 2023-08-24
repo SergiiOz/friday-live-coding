@@ -18,6 +18,10 @@ h1 {
 
 h2 {
     @include font($size: 34px, $height: 46px);
+
+    @include media-mobile {
+        @include font($size: 2.4rem, $height: 3.2rem);
+    }
 }
 
 h3 {
@@ -30,6 +34,14 @@ h3 {
 
 h4 {
     @include font($size: 22px, $height: 30px, $weight: 600);
+
+    @include media-tablet {
+        @include font($size: 20px, $height: 30px, $weight: 600);
+    }
+
+    @include media-mobile {
+        @include font($size: 18px, $height: 30px, $weight: 600);
+    }
 }
 
 h5 {

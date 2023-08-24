@@ -15,6 +15,10 @@
 .tools__button {
     text-align: center;
     margin-top: 60px;
+
+    @include media-tablet {
+        margin-top: 0px;
+    }
 }
 
 //Tool block
@@ -62,5 +66,11 @@
 
     @include media-mobile {
         margin-bottom: 2px;
+    }
+}
+
+.tool__text {
+    @include media-tablet {
+        margin-bottom: 54px;
     }
 }
