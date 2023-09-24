@@ -15,7 +15,7 @@
 }
 
 //Strategy
-.strategy__wrapper {
+.strategy-wrapper {
     > * {
         margin-bottom: 30px;
 
@@ -32,6 +32,11 @@
 .strategy {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+
+    &_hidden {
+        display: none;
+    }
 
     @include media-tablet {
         overflow: hidden;

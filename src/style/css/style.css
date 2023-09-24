@@ -798,16 +798,16 @@ h5 {
   margin-bottom: 31px;
 }
 
-.strategy__wrapper > * {
+.strategy-wrapper > * {
   margin-bottom: 30px;
 }
 @media (max-width: 768px) {
-  .strategy__wrapper > * {
+  .strategy-wrapper > * {
     flex-basis: 48%;
   }
 }
 @media (max-width: 414px) {
-  .strategy__wrapper > * {
+  .strategy-wrapper > * {
     flex-basis: 100%;
   }
 }
@@ -815,6 +815,10 @@ h5 {
 .strategy {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+.strategy_hidden {
+  display: none;
 }
 @media (max-width: 768px) {
   .strategy {
