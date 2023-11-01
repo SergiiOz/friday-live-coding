@@ -4,7 +4,13 @@
 
 .layout-3-column {
     @include columns(30%);
+    &:after{
+        content: '';
+        width: 30%;
+        display: block;
+    }
 }
+
 
 .layout-2-column {
     @include columns(48%);
